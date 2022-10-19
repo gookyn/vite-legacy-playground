@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
+    "target": "ES2020",
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
+    "outDir": "dist",
+    "useDefineForClassFields": true,
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -16,5 +17,6 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["."],
+  "exclude": ["**/dist/**"]
 }

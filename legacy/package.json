@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "1.8.1",
     "typescript": "^4.6.4",
     "vite": "2.9.4"
   }
