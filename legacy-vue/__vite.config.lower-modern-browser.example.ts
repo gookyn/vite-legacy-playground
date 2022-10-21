@@ -20,13 +20,17 @@ export default defineConfig({
     vue(),
     // for production build environments only
     legacy({
-      /**
-       * 1. try changing these values
-       * 2. run `pnpm build`, see the output files in dist directory
-       * 3. run `pnpm preview`, see the actual loaded files in different versions of browsers
-       */
-      targets: ['chrome >= 50'],
-      renderLegacyChunks: true,
+      // only to be compatible with modern browsers
+      // minimum support Native ESM, native ESM dynamic import, and import.meta
+      targets: [
+        'chrome >= 64',
+        'edge >= 79',
+        'safari >= 11.1',
+        'firefox >= 67',
+      ],
+      // unnecessary generate legacy browser's chunks
+      renderLegacyChunks: false,
+      // auto detect modern browser's polyfills
       modernPolyfills: true,
     }),
   ],

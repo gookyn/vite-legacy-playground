@@ -20,14 +20,14 @@ export default defineConfig({
     vue(),
     // for production build environments only
     legacy({
-      /**
-       * 1. try changing these values
-       * 2. run `pnpm build`, see the output files in dist directory
-       * 3. run `pnpm preview`, see the actual loaded files in different versions of browsers
-       */
+      // to be compatible with legacy browsers
       targets: ['chrome >= 50'],
+      // generate legacy browser's chunks
       renderLegacyChunks: true,
+      // auto detect modern browser's polyfills
       modernPolyfills: true,
     }),
   ],
 });
+
+// note: vue3 don't support ie
