@@ -8,9 +8,21 @@ export default defineConfig({
   },
   plugins: [
     legacy({
-      targets: ['chrome >= 55'],
+      // to be compatible with legacy browsers
+      targets: ['ie >= 11'],
+      // generate legacy browser's chunks
       renderLegacyChunks: true,
+      /**
+       * auto detect
+       */
       modernPolyfills: true,
+      /**
+       * or add manually
+       */
+      // only for legacy browsers
+      // polyfills: ['es/global-this', 'es/array/includes'],
+      // only for modern browsers
+      // modernPolyfills: ['es/global-this'],
     }),
   ],
 });

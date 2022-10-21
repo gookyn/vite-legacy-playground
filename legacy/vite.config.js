@@ -13,7 +13,7 @@ export default defineConfig({
        * 2. Run `pnpm build`, see the output files in dist directory
        * 3. Run `pnpm preview`, see the actual loaded files in different versions of browsers
        */
-      targets: ['chrome >= 55'],
+      targets: ['ie >= 11'],
       renderLegacyChunks: true,
       modernPolyfills: true,
     }),

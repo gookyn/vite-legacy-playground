@@ -8,6 +8,7 @@ export default defineConfig({
   },
   plugins: [
     legacy({
+      // only to be compatible with modern browsers
       // minimum support Native ESM, native ESM dynamic import, and import.meta
       targets: [
         'chrome >= 64',
@@ -15,8 +16,12 @@ export default defineConfig({
         'safari >= 11.1',
         'firefox >= 67',
       ],
+      // unnecessary generate legacy browser's chunks
       renderLegacyChunks: false,
+      // auto detect modern browser's polyfills
       modernPolyfills: true,
+      // or add manually
+      // modernPolyfills: ['es/global-this'],
     }),
   ],
 });
