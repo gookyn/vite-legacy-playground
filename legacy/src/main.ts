@@ -1,3 +1,3 @@
-import './home';
+import './app';
 import './play-global-this';
 import './play-array';
