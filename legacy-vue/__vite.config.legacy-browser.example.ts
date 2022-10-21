@@ -30,4 +30,4 @@ export default defineConfig({
   ],
 });
 
-// note: vue3 don't support ie
+// note: vue3 don't support IE
