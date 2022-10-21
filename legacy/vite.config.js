@@ -9,9 +9,9 @@ export default defineConfig({
   plugins: [
     legacy({
       /**
-       * 1. Try changing these values
-       * 2. Run `pnpm build`, see the output files in dist directory
-       * 3. Run `pnpm preview`, see the actual loaded files in different versions of browsers
+       * 1. try changing these values
+       * 2. run `pnpm build`, see the output files in dist directory
+       * 3. run `pnpm preview`, see the actual loaded files in different versions of browsers
        */
       targets: ['ie >= 11'],
       renderLegacyChunks: true,
