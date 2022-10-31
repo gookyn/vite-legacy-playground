@@ -11,6 +11,10 @@ Vite's default target is modern browsers, there may be some confusion if you wan
 - vite: v2.9.4
 - @vitejs/plugin-legacy: v1.8.1
 
+## Analysis and Understand
+- [Configuration Analysis](https://github.com/gookyn/vite-legacy-playground/wiki/Configuration-Analysis-of-Low-version-Browser-Compatibility-with-Vite)
+- [Examples and Analysis](https://github.com/gookyn/vite-legacy-playground/wiki/Examples-and-Analysis-of-Low-version-Browser-Compatibility-with-Vite)
+
 ## Playground
 
 - js
